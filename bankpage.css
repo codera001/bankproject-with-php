@@ -1,0 +1,749 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+/* first nav */
+.first-nav {
+    background-color: rgba(128, 128, 128, 0.25);
+
+}
+
+.border-top {
+    border-bottom: 3px solid rgba(255, 0, 0, 0.714);
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+.first-nav .items {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7px;
+    width: 100%;
+}
+
+.first-nav .items .list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    list-style: none;
+}
+
+.first-nav .items .list a {
+    text-decoration: none;
+    color: grey;
+
+}
+
+.first-nav .items .list .active {
+    color: black;
+    padding: 8px 12px 17px 12px;
+    background-color: rgba(255, 255, 255, 0.766);
+}
+
+.first-nav .items .icons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15%;
+    list-style: none;
+
+}
+
+.first-nav .items .icons a {
+    text-decoration: none;
+    color: grey;
+    border-radius: 30px;
+}
+
+@media (max-width:992px) {
+    .first-nav .items .list {
+        width: 50%;
+    }
+}
+
+
+
+/* second-nav */
+.second-nav {
+    background-color: rgba(128, 128, 128, 0.048);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.second-nav .logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-nav .logo h1 {
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+.second-nav .logo i {
+    color: rgba(255, 0, 0, 0.906);
+    font-size: 50px;
+}
+
+.second-nav .list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    list-style: none;
+}
+
+.second-nav .list i {
+    padding-right: 5px;
+}
+
+.second-nav .list a {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.second-nav .list a:hover {
+    color: red;
+}
+
+@media (max-width: 992px) {
+    .second-nav .list {
+        width: 70%;
+
+    }
+}
+
+
+
+
+/* third nav */
+.navbar {
+    background-color: rgba(128, 128, 128, 0.048);
+}
+
+.navbar .btn {
+    font-size: 15px;
+    font-weight: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar .btn:hover {
+    border-bottom: 2px solid rgba(255, 0, 0, 0.714);
+    background-color: transparent;
+    color: black;
+}
+
+.dropdown-menu {
+    min-width: 200px;
+    padding-left: 2rem;
+}
+
+.dropdown-menu.columns-3 {
+    min-width: 800px;
+    padding-left: 2rem;
+}
+
+.dropdown-menu li a {
+    padding: 5px 15px;
+    font-weight: 300;
+}
+
+.dropdown-menu li a:hover {
+    color: red;
+}
+
+.multi-column-dropdown {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.multi-column-dropdown li a {
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: normal;
+}
+
+.multi-column-dropdown li a:hover {
+    text-decoration: none;
+    color: red;
+
+}
+
+/* for mobile screens */
+@media (max-width: 767px) {
+    .dropdown-menu.multi-column {
+        min-width: 240px !important;
+        overflow-x: hidden;
+    }
+}
+
+/* for desktop screens */
+@media (min-width: 992px) {
+    .navbar .btn.main {
+        margin-left: 12rem;
+
+    }
+}
+
+
+
+/* carousel section */
+
+.carousel-indicators button {
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    padding: 4px;
+    margin: 0 15px;
+    background-color: transparent;
+    /* opacity: 1; */
+}
+
+
+.carousel-indicators button.active {
+    background-color: white;
+}
+
+.carousel .carousel-item {
+    max-height: 500px;
+
+}
+
+.carousel-item img {
+    object-fit: contain;
+    object-position: center;
+    overflow: hidden;
+
+}
+
+
+
+.carousel-caption {
+    left: -500;
+    top: 80px;
+    text-align: left;
+    color: black;
+
+
+}
+
+.carousel-caption h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder
+}
+
+.carousel-caption p {
+    margin-top: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.carousel-caption button {
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    background-color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* section-one */
+.section-one {
+    background-color: rgba(128, 128, 128, 0.096);
+    width: 100%;
+    position: relative;
+}
+
+.partners {
+    display: flex;
+    padding: 2rem 0;
+    background-color: rgba(128, 128, 128, 0.048);
+    border-bottom: solid rgba(128, 128, 128, 0.048);
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.partners p {
+    width: 30%;
+    color: grey;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.partners .images {
+    width: 70%;
+    justify-content: space-evenly;
+}
+
+.partners .images img {
+    width: 20%;
+    padding-right: 2rem;
+    font-weight: bolder;
+
+}
+
+.section-one .text h3 {
+    /* margin-left: 20rem; */
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: lighter;
+}
+
+.section-one .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.section-one .container .tools i {
+    font-size: 35px;
+    color: red;
+    padding-bottom: 1.5rem;
+
+}
+
+.section-one .container .tools h3 {
+    font-weight: lighter;
+    padding-bottom: 2rem;
+}
+
+.section-one .container .tools h6 {
+    padding-bottom: 4rem;
+}
+
+
+
+/* section-two */
+.section-two h1 {
+    text-align: center;
+    padding: 3rem 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.629);
+}
+
+.section-two .list {
+    display: flex;
+    justify-content: space-evenly;
+    
+    width: 70%;
+    border-bottom: solid rgba(128, 128, 128, 0.048)
+}
+
+.section-two .list h6 {
+    padding: 1rem 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: lighter;
+}
+.section-two .list .main{
+    color: red;
+border-bottom: 2px solid red;
+}
+
+
+.section-two .list h6:hover {
+color: red;
+border-bottom: 2px solid red;
+}
+
+.section-two .text-image{
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-evenly;
+}
+.section-two .text-image h6{
+font-size: 30px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+padding-bottom: 2rem;
+}
+
+.section-two .text-image p{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 15px;
+}
+
+.section-two .text-image button{
+border: none;
+background-color: rgba(255, 0, 0, 0.755);
+color: white;
+border-radius: 30px;
+padding: 0.5rem  2rem;
+}
+
+
+/* section-three */
+.container-fluid.section-three {
+    background-color: rgba(128, 128, 128, 0.096); 
+    margin-top: 8rem;
+}
+.section-three .text-image{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.section-three .text-image .text {
+    padding-top: 7rem;
+}
+.section-three .text-image .text h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section-three .text-image .text p {
+    color: rgba(0, 0, 0, 0.575);
+    padding-top: 2rem;
+}
+.section-three .text-image .images img {
+    padding-right: 2rem;
+}
+
+/* iphone */
+.iphone-x {
+    position: relative;
+    margin-top: 5rem;
+    
+    
+  }
+  
+  .iphone-x .side {
+    background: #1c1c1c;
+    border-radius: 54px;
+    box-shadow: inset 0 0 2px 2px white, inset 0 0 0 6px black, 0px -1px 13px 9px black inset;
+    height: 600px;
+    padding: 5px 10px;
+    width: 300px;
+    z-index: 1;
+  }
+
+  .iphone-x .screen {
+    background-color:rgba(128, 128, 128, 0.214);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 33px;
+    position: relative;
+    height: 570px;
+    width: 280px;
+    margin-left: -1px;
+    margin-top: 6px;
+    z-index:198;
+    overflow:hidden;
+  }
+  .iphone-x .screen .logo {
+    display: flex;
+    text-align: center;
+    margin-top: 5rem;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 4rem 0;
+    color: white;
+  }
+  .iphone-x .screen .logo i {
+    color: red;
+    padding-left: 4rem;
+    font-size: 27px;
+  }
+
+  .iphone-x .screen .logo h4 {
+padding-left: 1rem;
+
+  }
+  .iphone-x .screen .text {
+    background-image: url(/1\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-left: 1rem;
+  }
+
+  .iphone-x .screen .text p{
+ color: rgba(0, 0, 0, 0.712);
+  }
+  .iphone-x .screen .text button {
+     border: none;
+     border-radius: 30px;
+     padding: 0 1rem;
+     background-color: red;
+     color: white;
+  }
+  
+  
+  /* .iphone-x .line::after, .iphone-x .line::before {
+    content: "";
+    position: absolute;
+    border: solid rgba(68, 68, 68, 0.25);
+    border-width: 0 6px;
+    height: 5px;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+  }
+  .iphone-x .line::after {
+    top: 68px;
+  }
+  .iphone-x .line::before {
+    bottom: 68px;
+  } */
+  .iphone-x .header {
+    background: #1c1c1c;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    height: 24px;
+    left: 50%;
+    margin-left: -82px;
+    position: absolute;
+    top: 15px;
+    width: 164px;
+    z-index: 199;
+  }
+  .iphone-x .sensor-1::after, .iphone-x .sensor-1::before {
+    content: "";
+    position: absolute;
+  }
+  .iphone-x .sensor-1::after {
+    background: black;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    left: 1%;
+    margin-left: 10px;
+    top: 3px;
+  }
+  .iphone-x .sensor-1::before {
+    background: black;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    left: 10%;
+    margin-left: 20px;
+    top: 3px;
+  }
+  .iphone-x .sensor-2::after, .iphone-x .sensor-2::before {
+    content: "";
+    position: absolute;
+  }
+  .iphone-x .sensor-2::before {
+    background: black;
+    border-radius: 2.5px;
+    height: 5px;
+    width: 40px;
+    left: 50%;
+    margin-left: -20px;
+    top: 7px;
+  }
+  .iphone-x .sensor-3::after, .iphone-x .sensor-3::before {
+    content: "";
+    position: absolute;
+  }
+  .iphone-x .sensor-3::before {
+    background: #444;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    left: 50%;
+    margin-left: 35px;
+    top: 3px;
+    box-shadow:0px 0px 5px 2px navy inset
+  }
+  .iphone-x .sensor-3::after {
+    background: #222;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    left: 65%;
+    margin-left: 33px;
+  }
+  .iphone-x .volume-button {
+    background:black;
+    height: 26px;
+    left: -2px;
+    position: absolute;
+    top: 92px;
+    width: 3px;
+  }
+  .iphone-x .volume-button::after, .iphone-x .volume-button::before {
+    content: "";
+    position: absolute;
+    background: black;
+    height: 50px;
+    left: 0;
+    width: 3px;
+  }
+  .iphone-x .volume-button::after {
+    top: 48px;
+  }
+  .iphone-x .volume-button::before {
+    top: 112px;
+  }
+  .iphone-x .power-button {
+    background: black;
+    height: 80px;
+    right: -2px;
+    position: absolute;
+    top: 160px;
+    width: 3px;
+  }
+
+  @media (min-width:992px) {
+    .iphone-x{
+        left: 15rem;
+        top: 5rem;
+    }
+  }
+
+  .section-three .image-text {
+    display: flex;
+    margin-top: 10rem;
+  }
+  .section-three .image-text  img {
+    object-fit: contain;
+    object-position: center;
+    height: 400px;
+  }
+  .section-three .image-text  .text {
+    background-color: cornsilk;
+    padding-left: 8rem;
+    padding-right: 6rem;
+    
+  }
+  .section-three .image-text  .text p {
+    margin-top: 3rem;
+    font-size: 15px;
+  }
+  .section-three .image-text  .text button {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+
+  }
+  .image-roll .carousel-item {
+    height: 50vh;
+  }
+
+  .card {
+    margin: 0;
+    padding: 0;
+    margin-right: rem;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    background-color: white;
+  }
+
+.carousel-item.card {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: red;
+}
+  .card .card-image img {
+    height: 130px;
+    width:100%;
+    margin-right:4rem
+    
+  
+   
+  }
+
+
+  /* section-four */
+ .container-fluid.section-four {
+    background-color: white;
+ }
+  .section-four {
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .section-four .text {
+    padding-top: 6rem;
+    padding-right: 2.5rem;
+    padding-left: 1rem;
+  }
+  .section-four .text h5{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding-bottom: 2rem;
+
+  }
+  .section-four .text p{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 13px;
+  }
+
+
+  /* footer section */
+  .container.footer {
+    display:flex;
+    justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
+
+ }
+ footer {
+   margin-top: 5rem;
+color: white;
+    background-color:rgba(0, 0, 0, 0.876);
+  }
+
+  .footer .text {
+    padding-top: 6rem;
+    width:80%;
+    margin-left: 10rem;
+   
+
+  }
+
+  .footer .text .logo {
+    display:flex
+  }
+
+  .footer .text .logo i {
+    color: red;
+    font-size: 30px;
+  }
+  .footer .text h5{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding-bottom: 2rem;
+
+  }
+  .footer .text p{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 13px;
+  }
+
+
+  .footer .copy {
+    display: flex;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright .text {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+
+
+
+
+  
